@@ -6,3 +6,6 @@ v.1.0 added files
 -Added animeJS
 -Added React-router
 
+## v2.1
+-Added some Styling
+-Worked on Landing Page
