@@ -1,11 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import './App.css';
 import stack from "./stack.jpg";
 import ReactAnime from 'react-animejs'
-const {Anime, stagger} = ReactAnime
+const {Anime} = ReactAnime
 
 
 
