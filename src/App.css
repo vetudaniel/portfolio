@@ -31,7 +31,7 @@ li{
 .introContainer{
   display:flex;
   position: absolute;
-  top:27%;
+  top:32%;
 }
 .emoji{
   font-size:1.9rem;
@@ -66,21 +66,19 @@ h3{
 
 @media only screen and (max-width: 813px) and (orientation: landscape){
 
-.icon{
-   position:relative;
- 
- }
+
 .custom-shape-divider-bottom-1639539052{
   display:none;
 }
-
- .socialsWrap{
-   height:200px;
-   width:400px;
-   position:relative;
- }
- 
+  .introContainer{
+    top:18%;
+  }
 }
+
+
+
+ 
+
 @media only screen and (max-width: 550px){
   .custom-shape-divider-bottom-1639539052{
     display:none;
@@ -90,7 +88,6 @@ h3{
 
 @media only screen and (max-width: 350px){
   .introContainer{
-   
     top:15%;
   }
   

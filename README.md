@@ -17,3 +17,8 @@ v.1.0 added files
 ## v3.1
 -Fixed some Styling and layout
 -added mobile nav
+
+## v3.2
+
+-Fixed some Styling and layout
+-added mobile nav icons
