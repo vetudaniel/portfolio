@@ -9,7 +9,7 @@ export function Nav() {
 
     return (
         <>
-        <div className={sidebar ? "navigation" : "navigation"+" active"}>
+        <div className={sidebar ? "navigation" : "navigation active"}>
             <div className="lines">
                 <div className="lineswrap" onClick={showSidebar}>
                     <div className="line line1"></div>
