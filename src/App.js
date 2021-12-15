@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {Nav} from './Components/Nav.js'
+import {MobileNavigation} from './Components/MobileNavigation'
 import './App.css';
 import {ReactComponent as Stack} from './utils/qwe.svg';
 
@@ -25,7 +26,7 @@ function App() {
   return (
     <div className="App">
       {/* NAV */}
-      <Nav/>
+      <Nav className="navComponent"/>
       {/* TOP SVG */}
       <div className="custom-shape-divider-top-1639539555">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -42,13 +43,13 @@ function App() {
 
      <div className="wrap">
       
-      <div className="introContainer" >
+        <div className="introContainer" >
           <h1>Hi!</h1><span className="emoji">&#128075;</span>
         </div>
-        
-        <p className="name">My name is <span className="D">D</span>aniel <span className="V">V</span>etu and I am an aspiring self-taught web developer.</p>
-        <h3>I am currently learning the PERN Stack.</h3>
-
+        <div className="hero">
+          <p className="name">My name is <span className="D">D</span>aniel <span className="V">V</span>etu and I am an aspiring self-taught web developer.</p>
+          <h3>lorem20</h3>
+        </div>
         <div className="stack">
         <Stack id="stack"/>
         </div>
@@ -58,10 +59,12 @@ function App() {
           <FontAwesomeIcon icon={faLinkedin} className="icon"></FontAwesomeIcon>
           <FontAwesomeIcon icon={faGithub} className=" icon1"></FontAwesomeIcon>
         </div>
+        
      </div>
+     
    
 
-
+     
      
      
       
@@ -103,6 +106,7 @@ function App() {
     >
     
     </Anime>
+        <MobileNavigation/>
     </div>
   );
   

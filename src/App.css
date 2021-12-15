@@ -7,37 +7,43 @@
 body{
   background-color: #1e2036;
   color:#fff;
-
+  height:100vh;
   
 }
-.wrap{
+li{
+  list-style-type: none;
+}
+.App{
   height:100vh;
-  width:95vw;
+}
+.wrap{
+  height:100%;
   margin:0 auto;
+  padding:0 15px;
   position:relative;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  text-align: center;
+ 
 }
 .introContainer{
   display:flex;
+  position: absolute;
+  top:27%;
 }
 .emoji{
-  font-size:2rem;
+  font-size:1.9rem;
 }
 
-h1{
-  margin:0.4rem 1rem;
-}
+
 .name{
-  margin:2.4rem ;
+
   font-size:1.2rem;
   opacity:0;
 }
 h3{
-  margin:0.4rem ; 
   text-align: center;
   opacity:0;
 }
@@ -51,6 +57,8 @@ h3{
   display:flex;
   justify-content: center;
   opacity:0;
+  position: absolute;
+  bottom:25%;
   
 }
 
@@ -65,19 +73,27 @@ h3{
 .custom-shape-divider-bottom-1639539052{
   display:none;
 }
-.wrap{
-  
-  margin:2.5rem auto;
-}
+
  .socialsWrap{
    height:200px;
    width:400px;
    position:relative;
  }
- #stack{
+ 
+}
+@media only screen and (max-width: 550px){
+  .custom-shape-divider-bottom-1639539052{
+    display:none;
+  }
+  
+}
 
-   margin: 1rem;
- }
+@media only screen and (max-width: 350px){
+  .introContainer{
+   
+    top:15%;
+  }
+  
 }
 
 
@@ -87,17 +103,15 @@ h3{
 .socialsWrap{
   text-align: center;
   min-height:100px;
-  margin-top:1.5rem;
+  position:absolute;
   bottom:0;
-  left:10%;
+  right:8%;
+  
 }
 .socialsWrap .icon{
   font-size:2.5rem;
-  margin:0.9rem 0.3rem;
-  position:absolute;
-  z-index:100;
-  right:25px;
   opacity:0;
+  margin-right:1rem;
 }
 
 .icon:hover, .icon1:hover{
@@ -107,10 +121,6 @@ h3{
 }
 .icon1{
   font-size:2.5rem;
-  margin:0.9rem 0.3rem;
-  position:absolute;
-  z-index:100;
- right:95px;
   opacity:0;
 }
 .custom-shape-divider-bottom-1639539052 {
@@ -128,7 +138,7 @@ h3{
   position: relative;
   display: block;
   width: calc(139% + 1.3px);
-  height: 283px;
+  height: 183px;
 }
 
 .custom-shape-divider-bottom-1639539052 .shape-fill {

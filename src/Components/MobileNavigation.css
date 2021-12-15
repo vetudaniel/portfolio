@@ -1,0 +1,18 @@
+.mobNav{
+    position:fixed;
+    background-color: #12163b;
+    width:100%;
+  
+    z-index:100;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    bottom: 0;
+    left:0;
+}
+@media only screen and (min-width: 550px){
+    .mobNav{
+      display:none;
+    }
+  }

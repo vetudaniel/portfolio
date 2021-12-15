@@ -1,12 +1,12 @@
 .navigation{
     position:fixed;
     top:0;
-    left:-20vw;
+    left:-50vw;
     z-index:100;
     background-color: #12163b;
     height:100%;
-    width:20vw; 
     transition:300ms ease-in; 
+    min-width:50vw;
 }
 .navigation.active{
     left:0;
@@ -56,3 +56,8 @@
     text-align: center;
    
 }
+@media only screen and (max-width: 550px){
+    .navigation{
+      display:none;
+    }
+  }

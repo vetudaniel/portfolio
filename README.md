@@ -13,3 +13,7 @@ v.1.0 added files
 ## v3.0
 -Added Navbar
 -Worked on Styling and layout
+
+## v3.1
+-Fixed some Styling and layout
+-added mobile nav
