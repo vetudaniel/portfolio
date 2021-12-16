@@ -1,32 +1,23 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {Nav} from './Components/Nav.js'
+import {Home} from './Components/Home.js'
+import {About} from './Components/About.js'
 import {MobileNavigation} from './Components/MobileNavigation'
 import './App.css';
-import {ReactComponent as Stack} from './utils/qwe.svg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
-import ReactAnime from 'react-animejs'
+import { BrowserRouter as Router} from 'react-router-dom'
+import { Routes ,Route } from 'react-router-dom';
 
-const {Anime} = ReactAnime
-
-
-
-
-
-
-
-
+import React from 'react';
 
 function App() {
-
-
-
 
   return (
     <div className="App">
       {/* NAV */}
-      <Nav className="navComponent"/>
+      
       {/* TOP SVG */}
       <div className="custom-shape-divider-top-1639539555">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -39,74 +30,25 @@ function App() {
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
         </svg>
       </div>
-
-
-     <div className="wrap">
       
-        <div className="introContainer" >
-          <h1>Hi!</h1><span className="emoji">&#128075;</span>
+      
+      <Router>
+        <div className="container">
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/about" element={<About/>}/>
+          </Routes>
+          <MobileNavigation/>
+          <div className="socialsWrap">
+          <a href="https://www.linkedin.com/in/daniel-ioan-vetu-50baab20a/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="icon"></FontAwesomeIcon></a>
+          <a href="https://github.com/vetudaniel" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faGithub} className=" icon1"></FontAwesomeIcon></a>
         </div>
-        <div className="hero">
-          <p className="name">My name is <span className="D">D</span>aniel <span className="V">V</span>etu and I am an aspiring self-taught web developer.</p>
-          <h3>lorem20</h3>
         </div>
-        <div className="stack">
-        <Stack id="stack"/>
-        </div>
-        
-        
-        <div className="socialsWrap">
-          <FontAwesomeIcon icon={faLinkedin} className="icon"></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faGithub} className=" icon1"></FontAwesomeIcon>
-        </div>
-        
-     </div>
-     
-   
-
+      </Router>
+      
      
      
-     
-      
-      
-      
-      
-      {/* ANIMATIONS */}
-      <Anime
-           initial={[
-             {
-               targets:'.introContainer',
-               translateY:25
-             },
-         
-            { //2nd
-              targets: ".name",
-              opacity:1,
-             
-            },
-            {
-              targets:'h3',
-              opacity:1,
-            },
-            {
-              targets:'.stack',
-              opacity:1,
-              translateY:35
-            },
-            {
-              targets:'.socialsWrap',
-              opacity:1
-            },
-            {
-              targets:'.icon, .icon1',
-              opacity:1
-            }
-            
-          ]}
-    >
-    
-    </Anime>
-        <MobileNavigation/>
     </div>
   );
   

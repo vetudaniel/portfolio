@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Nav.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,10 +20,10 @@ export function Nav() {
                 
             </div>
             <ul className="navlinks">
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
-                
+                <Link to="/"><li onClick={showSidebar}>Home</li></Link>
+                <Link to="/about"><li onClick={showSidebar}> About</li></Link>
+                <Link to="/projects"><li onClick={showSidebar}> Projects</li></Link>
+                <Link to="/contact"><li onClick={showSidebar}> Contact</li></Link>
             </ul>
 
 
