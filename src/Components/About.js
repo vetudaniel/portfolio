@@ -1,8 +1,7 @@
 import React from 'react'
 import './About.css'
 import img from '../utils/coverfoto.jpg'
-import ReactAnime from 'react-animejs'
-const {Anime} = ReactAnime
+
 
 export function About() {
     return (
