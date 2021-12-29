@@ -4,13 +4,14 @@ import {About} from './Components/About.js'
 import {MobileNavigation} from './Components/MobileNavigation'
 import './App.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+
 
 import { BrowserRouter as Router} from 'react-router-dom'
 import { Routes ,Route } from 'react-router-dom';
 
 import React from 'react';
+
+
 
 function App() {
 
@@ -33,21 +34,19 @@ function App() {
       
       
       <Router>
-        <div className="container">
+        <div className="container" >
           <Nav />
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>}/>
           </Routes>
           <MobileNavigation/>
-          <div className="socialsWrap">
-          <a href="https://www.linkedin.com/in/daniel-ioan-vetu-50baab20a/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="icon"></FontAwesomeIcon></a>
-          <a href="https://github.com/vetudaniel" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faGithub} className=" icon1"></FontAwesomeIcon></a>
-        </div>
+          
         </div>
       </Router>
       
-     
+  
+      
      
     </div>
   );

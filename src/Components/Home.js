@@ -3,7 +3,6 @@ import {ReactComponent as Stack} from '../utils/qwe.svg';
 import React from 'react'
 import './Home.css'
 import ReactAnime from 'react-animejs'
-
 const {Anime} = ReactAnime
 
 export  function Home() {
@@ -15,34 +14,32 @@ export  function Home() {
             <h1>Hi!</h1><span className="emoji">&#128075;</span>
           </div>
           
-          <div className="hero">
-            <p className="name">My name is <span className="D">D</span>aniel <span className="V">V</span>etu and I am an aspiring self-taught web developer.</p>
-              <h3>I am currently learning the Pern stack </h3>
+          <div className="homeHero">
+              <p className="name">My name is <span className="D">D</span>aniel <span className="V">V</span>etu and I am an aspiring self-taught web developer.</p>
+              <p className="interests">I am interested in all things tech related but especially in software-developement and anything internet-related.</p>
+              <h2>Currently I am learning the PERN Stack.</h2>
+          </div>
+          <div className="stack">
+            <Stack id="stack"/>
           </div>
         </div>
-      
-        <div className="stack">
-         <Stack id="stack"/>
-        </div>
-        
-        
-       
-
-         {/* ANIMATIONS */}
-      <Anime
+        <Anime
            initial={[
              {
                targets:'.introContainer',
                translateY:25
              },
          
-            { //2nd
-              targets: ".name",
+            { 
+              targets: ".name ",
               opacity:1,
-             
+            },
+            { 
+              targets: ".interests ",
+              opacity:1,
             },
             {
-              targets:'h3',
+              targets:'h2',
               opacity:1,
             },
             {
@@ -63,6 +60,9 @@ export  function Home() {
     >
     
     </Anime>
+       
+
+  
      </div>
 
      

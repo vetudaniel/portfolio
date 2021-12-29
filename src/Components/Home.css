@@ -1,5 +1,6 @@
 .wrap{
-    min-height:100vh;
+
+    height:100vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -8,26 +9,29 @@
     padding:0 15px;
     text-align: center;
     position: relative;
-    height:100vh;
-
   }
   .hi{
     display:flex;
     justify-content: center;
+    
   }
   
   .emoji{
     font-size:1.9rem;
   }
-  
-  .name{
+  p{
     font-size:1.2rem;
+  }
+  .name{
     opacity:0;
   }
-  h3{
+  .interests{
+    opacity:0;
+  }
+
+  h2{
     text-align: center;
     opacity:0;
-  
   }
   .D, .V{
     color:#808ece;
@@ -54,39 +58,15 @@
     .custom-shape-divider-bottom-1639539052{
       display:none;
     }
-  
-    
+    .introContainer{
+      min-height:100%;
+    }
   }
   
-  @media only screen and (max-width: 350px){
-   
-    
-  }
+ 
   
   
   
   
   
-  .socialsWrap{
-    text-align: center;
-    padding-top:2rem;
-    position: absolute;
-    bottom:9vh;
-    right:4vh;
-   
-  }
-  .socialsWrap .icon{
-    font-size:1.8rem;
-    opacity:0;
-    margin-right:1rem;
-  }
   
-  .icon:hover, .icon1:hover{
-    color:#3a52be;
-    cursor:pointer;
-    transition:color .3s ease;
-  }
-  .icon1{
-    font-size:1.8rem;
-    opacity:0;
-  }

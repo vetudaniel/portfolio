@@ -28,3 +28,9 @@
 - some refactoring
 - implemented routes
 - styling changes
+
+## v4.1
+
+- moved social links
+- hamburger menu adjustment
+- minor styling changes
