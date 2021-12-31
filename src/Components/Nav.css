@@ -4,9 +4,10 @@
     left:-50vw;
     z-index:100;
     background-color: #12163b;
-    height:100%;
     transition:300ms ease-in; 
     min-width:50vw;
+    height:100vh;
+ 
 }
 .navigation.active{
     left:0;
@@ -28,7 +29,7 @@
 }
 .line{
     height:2px;
-    width:29px;
+    width:28.5px;
     background-color: #fff;
     margin:.5rem;
     transition:all .4s ease-in-out;
@@ -55,20 +56,19 @@
 .line3.active{
     transform: rotate(-45deg);
     transform-origin:  left center;
-    
-    
 }
 .navlinks{
-    height:100%;
     display:flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    height:100%;
 }
 .navlinks li{
-    padding:1rem;
-    margin:1rem 0.5rem;
-    text-align: center;
+    padding-top:.4rem;
+    padding-bottom: .4rem;
 }
+
 .navlinks li:hover{
     color:#3a52be;
     transition:color .3s ease;
@@ -82,12 +82,9 @@
   .socials{
     text-align: center;
     padding:.4rem 0;
-  
-    
   }
   .socials .icon{
     font-size:1.6rem;
-    
     margin-right:1rem;
   }
   
@@ -98,7 +95,6 @@
   }
   .icon1{
     font-size:1.6rem;
-    
   }
 
 

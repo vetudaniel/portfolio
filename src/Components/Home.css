@@ -1,15 +1,15 @@
 .wrap{
 
-    height:100vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0 auto 8vh auto;
     padding:0 15px;
     text-align: center;
     position: relative;
+    min-height:100vh;
   }
+ 
   .hi{
     display:flex;
     justify-content: center;
@@ -58,9 +58,10 @@
     .custom-shape-divider-bottom-1639539052{
       display:none;
     }
-    .introContainer{
-      min-height:100%;
-    }
+  
+   .wrap{
+    margin-bottom:17vh;
+   }
   }
   
  

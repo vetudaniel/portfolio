@@ -7,7 +7,10 @@
 body{
   background-color: #1e2036;
   color:#fff;
-  height:100vh;
+line-height:1.8;
+max-width:95%;
+margin:0 auto;
+
 }
 li{
   list-style-type: none;
@@ -22,6 +25,7 @@ a{
   bottom: 0;
   left: 0;
   width: 100%;
+  
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
@@ -30,7 +34,7 @@ a{
 .custom-shape-divider-bottom-1639539052 svg {
   position: relative;
   display: block;
-  width: calc(139% + 1.3px);
+  width: calc(122% + 1.3px);
   height: 183px;
 }
 
@@ -51,7 +55,7 @@ a{
   position: relative;
   display: block;
   width: calc(152% + 1.3px);
-  height: 130px;
+  height: 150px;
 }
 
 .custom-shape-divider-top-1639539555 .shape-fill {

@@ -34,3 +34,7 @@
 - moved social links
 - hamburger menu adjustment
 - minor styling changes
+
+## v4.2
+
+- styling adjustements
