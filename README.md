@@ -35,6 +35,6 @@
 - hamburger menu adjustment
 - minor styling changes
 
-## v4.2
+## v4.2.1
 
 - styling adjustements

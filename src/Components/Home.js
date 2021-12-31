@@ -47,10 +47,7 @@ export  function Home() {
               opacity:1,
               translateY:35
             },
-            {
-              targets:'.socialsWrap',
-              opacity:1
-            },
+        
             {
               targets:'.icon, .icon1',
               opacity:1

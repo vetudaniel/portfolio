@@ -9,8 +9,6 @@ export function About() {
             <div className="hero">
                 <img src={img} alt="hero-img" style={{width:"270px", borderRadius:'1rem'}}/>
                 <h1><span className="font">A</span>bout <span className="font">M</span>e</h1>
-               
-               
             </div>
         </div>
     )
