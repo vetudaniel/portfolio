@@ -18,6 +18,7 @@ export  function Home() {
               <p className="name">My name is <span className="D">D</span>aniel <span className="V">V</span>etu and I am an aspiring self-taught web developer.</p>
               <p className="interests">I am interested in all things tech related but especially in software-developement and anything internet-related.</p>
               <h2>Currently I am learning the PERN Stack.</h2>
+              
           </div>
           <div className="stack">
             <Stack id="stack"/>

@@ -3,7 +3,7 @@ import './Nav.css'
 import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -19,6 +19,13 @@ export function Nav({ sidebar,  overlay, menuToggle }) {
                     <div className={ sidebar ? 'line line2' : "line line2 active"} ></div>
                     <div className={ sidebar ? 'line line3' : "line line3 active"} ></div>
                 </div>
+               
+                    <select name="language" id="language" form="languageform">
+                        <option value="English">English</option>
+                        <option value="German">German</option>
+                    </select>
+                
+              
               
             </div>
             <ul className="navlinks">
@@ -26,12 +33,15 @@ export function Nav({ sidebar,  overlay, menuToggle }) {
                 <Link to="/about"><li onClick={menuToggle}> About</li></Link>
                 <Link to="/projects"><li onClick={menuToggle}> Projects</li></Link>
                 <Link to="/contact"><li onClick={menuToggle}> Contact</li></Link>
-                <div className="socials">
+                
+            </ul>
+            <div className="socials">
                     <a href="https://www.linkedin.com/in/daniel-ioan-vetu-50baab20a/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="icon"></FontAwesomeIcon></a>
                     <a href="https://github.com/vetudaniel" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faGithub} className=" icon1"></FontAwesomeIcon></a>
-                </div>
-            </ul>
-            
+            </div>
+           
+         
+         
         </div>
             <div className={overlay ? 'overlay active' : 'overlay'} onClick={menuToggle}></div>
     </>

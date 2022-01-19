@@ -24,7 +24,6 @@
     opacity:0;
     visibility: hidden;
     transition:300ms ease-in; 
-
 }
 .overlay.active{
    visibility: visible;
@@ -79,22 +78,33 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top:1.5rem;
+   
+    height:100%;
 }
-.navlinks .socials {
+ .socials {
    position:absolute;
-   bottom:5%;
-   right:9%;
+   bottom:15%;
+   left:10%;
 }
 .navlinks li{
-    padding-top:.4rem;
-    padding-bottom: .4rem;
+    padding-top:1.2rem;
+    padding-bottom: 1.2rem;
 }
 
 .navlinks li:hover{
     color:#3a52be;
     transition:color .3s ease;
 }
+select{
+    margin:0.7rem;
+    background-color: rgb(50, 63, 102);
+    color:white;
+    font-weight: 600;
+    font-family: "Poppins";
+    border:1px solid rgba(255, 255, 255, 0.363);
+}
+
+
 @media only screen and (max-width: 550px){
     .navigation{
       display:none;

@@ -49,3 +49,8 @@
 ## v5.1
 
 - minor css fixes
+
+## v5.2
+
+- minor styling changes
+- added language select menu
