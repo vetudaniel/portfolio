@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {Nav} from './Components/Nav.js'
 import {Home} from './Components/Home.js'
 import {About} from './Components/About.js'
@@ -14,6 +15,18 @@ import React from 'react';
 
 
 function App() {
+
+  const [sidebar, setSidebar] = useState(true)
+  const [overlay, setOverlay] = useState(false)
+
+  const showSidebar = () => setSidebar(!sidebar);
+  const showOverlay = () => setOverlay(!overlay)
+  const menuToggle = () => {
+    showSidebar()
+    showOverlay()
+  }
+
+
 
   return (
     <div className="App">
@@ -35,7 +48,7 @@ function App() {
       
       <Router>
         <div className="container" >
-          <Nav />
+          <Nav  sidebar={sidebar}  overlay={overlay} menuToggle= {menuToggle}/>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>}/>

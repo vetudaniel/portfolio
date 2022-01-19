@@ -38,3 +38,10 @@
 ## v4.2.1
 
 - styling adjustements
+
+## v5.0
+
+- added sidemenu overlay
+- recfactoring sidemenu functionality(moving state and controller to app component)
+- mobilemenu icons changes
+- minor styling changes
