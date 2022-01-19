@@ -78,17 +78,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
-    height:100%;
+    min-height:55vh;
 }
- .socials {
-   position:absolute;
-   bottom:15%;
-   left:10%;
-}
+
 .navlinks li{
-    padding-top:1.2rem;
+    padding-top:0.8rem;
     padding-bottom: 1.2rem;
+}
+.socials{
+    position: absolute;
+    top:0.5%;
+    left:18%;
 }
 
 .navlinks li:hover{
