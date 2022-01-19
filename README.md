@@ -45,3 +45,7 @@
 - recfactoring sidemenu functionality(moving state and controller to app component)
 - mobilemenu icons changes
 - minor styling changes
+
+## v5.1
+
+- minor css fixes
