@@ -54,3 +54,8 @@
 
 - minor styling changes
 - added language select menu
+
+## v5.4
+
+- styling and layout changes
+- added carousel

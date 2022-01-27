@@ -1,7 +1,5 @@
 .wrap{
-    text-align: center;
-    position: relative;
-
+  text-align: center;
   }
   .introContainer{
     max-width:95%;
@@ -11,7 +9,6 @@
   .hi{
     display:flex;
     justify-content: center;
-    
   }
   
   .emoji{
@@ -44,6 +41,11 @@
   .custom-shape-divider-bottom-1639539052{
     display:none;
   }
+  .wrap{
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+   }
   }
   
   
@@ -56,7 +58,12 @@
     }
   
    .wrap{
-    margin-bottom:12vh;
+    
+   
+ 
+    width:95vw;
+margin-bottom:7rem;
+    border-radius: 0;
    }
   }
   
