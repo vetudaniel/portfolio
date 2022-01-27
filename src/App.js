@@ -16,15 +16,11 @@ import React from 'react';
 
 function App() {
 
-  const [sidebar, setSidebar] = useState(true)
-  const [overlay, setOverlay] = useState(false)
+  const [sideMenu, setSideMenu] = useState(true)
+  
 
-  const showSidebar = () => setSidebar(!sidebar);
-  const showOverlay = () => setOverlay(!overlay)
-  const menuToggle = () => {
-    showSidebar()
-    showOverlay()
-  }
+  const toggleSideMenu = () => setSideMenu(!sideMenu);
+  
 
 
 
@@ -48,7 +44,7 @@ function App() {
       
       <Router>
         <div className="container" >
-          <Nav  sidebar={sidebar}  overlay={overlay} menuToggle= {menuToggle}/>
+          <Nav  sideMenu={sideMenu}  menuToggle= {toggleSideMenu}/>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/about" element={<About/>}/>

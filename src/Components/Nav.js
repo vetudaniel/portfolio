@@ -7,17 +7,17 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 
 
 
-export function Nav({ sidebar,  overlay, menuToggle }) {
+export function Nav({ sideMenu,  menuToggle }) {
    
 
     return (
     <>
-        <div className={sidebar ? "navigation" : "navigation active"}>
+        <div className={sideMenu ? "navigation" : "navigation active"}>
             <div className="lines">
                 <div className="lineswrap" onClick={menuToggle} >
-                    <div className={ sidebar ? 'line line1' : "line line1 active"} ></div>
-                    <div className={ sidebar ? 'line line2' : "line line2 active"} ></div>
-                    <div className={ sidebar ? 'line line3' : "line line3 active"} ></div>
+                    <div className={ sideMenu ? 'line line1' : "line line1 active"} ></div>
+                    <div className={ sideMenu ? 'line line2' : "line line2 active"} ></div>
+                    <div className={ sideMenu ? 'line line3' : "line line3 active"} ></div>
                 </div>
                
                     <select name="language" id="language" form="languageform">
@@ -43,7 +43,7 @@ export function Nav({ sidebar,  overlay, menuToggle }) {
          
          
         </div>
-            <div className={overlay ? 'overlay active' : 'overlay'} onClick={menuToggle}></div>
+            <div className={sideMenu ? 'overlay' : 'overlay active'} onClick={menuToggle}></div>
     </>
        
           

@@ -1,14 +1,22 @@
 import React from 'react'
 import './About.css'
+import OwlCarousel from 'react-owl-carousel';  
+
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+
+import 'owl.carousel/dist/assets/owl.theme.default.css';  
+
 import img from '../utils/coverfoto.jpg'
 
 
 export function About() {
+  
     return (
         <div className="wrap">
             <div className="hero">
-                <img src={img} alt="hero-img" style={{width:"270px", borderRadius:'1rem'}}/>
-                <h1><span className="font">A</span>bout <span className="font">M</span>e</h1>
+                <OwlCarousel>
+                    <img src={img} alt="lol"/>
+                </OwlCarousel>
             </div>
         </div>
     )

@@ -8,10 +8,10 @@ export function MobileNavigation() {
     return (
         <>
         <div className="mobNav">
-        <Link to="/"><FontAwesomeIcon icon={faHome} className=" mobNavIcon"></FontAwesomeIcon><span className="mobmenuspan">Home</span></Link>
-        <Link to="/about"><FontAwesomeIcon icon={faInfoCircle} className=" mobNavIcon"></FontAwesomeIcon><span className="mobmenuspan">About</span></Link>
-        <Link to="/contact"><FontAwesomeIcon icon={faAddressBook} className=" mobNavIcon"></FontAwesomeIcon><span className="mobmenuspan">Contact</span></Link>
-        <Link to="/projects"><FontAwesomeIcon icon={faWrench} className=" mobNavIcon"></FontAwesomeIcon><span className="mobmenuspan">Projects</span></Link>
+        <Link to="/" className="iconWrap"><FontAwesomeIcon icon={faHome} className=" mobNavIcon"></FontAwesomeIcon><span className="mobmenuspan">Home</span></Link>
+        <Link to="/about" className="iconWrap"><FontAwesomeIcon icon={faInfoCircle} className=" mobNavIcon"></FontAwesomeIcon><span className="mobmenuspan">About</span></Link>
+        <Link to="/contact" className="iconWrap"><FontAwesomeIcon icon={faAddressBook} className=" mobNavIcon"></FontAwesomeIcon><span className="mobmenuspan">Contact</span></Link>
+        <Link to="/projects" className="iconWrap"><FontAwesomeIcon icon={faWrench} className=" mobNavIcon"></FontAwesomeIcon><span className="mobmenuspan">Projects</span></Link>
         </div>
         </>
     )

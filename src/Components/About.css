@@ -4,3 +4,8 @@ img {
 .font{
     color:#808ece;
 }
+.hero{
+    background-color: white;
+    width:75vw;
+    height:40vh;
+}
