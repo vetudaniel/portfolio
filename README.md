@@ -59,3 +59,8 @@
 
 - styling and layout changes
 - added carousel
+
+## v5.5
+
+- carousel styles
+- layout changes

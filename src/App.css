@@ -21,6 +21,7 @@ a{
   color:#fff;
 }
 
+
 .custom-shape-divider-bottom-1639539052 {
   position: absolute;
   bottom: 0;
@@ -50,7 +51,7 @@ a{
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-  filter: drop-shadow(311px 115px 112px rgb(0 0 0 / 0.4));
+  
 }
 
 .custom-shape-divider-top-1639539555 svg {
@@ -58,11 +59,11 @@ a{
   display: block;
   width: calc(152% + 1.3px);
   height: 150px;
-  filter: drop-shadow(311px 115px 112px rgb(0 0 0 / 0.4));
+
 }
 
 .custom-shape-divider-top-1639539555 .shape-fill {
-  fill: #8c98ce;
+  fill: #3a52be54;
   
 }
 
